@@ -77,10 +77,10 @@ Pair * searchMap(HashMap * map,  char * key) {
         {
             
             map->current = inde;
-            return map->bukets[inde];
+            return map->buckets[inde];
             
         }
-        inde = (inde + 1) % map->capacity
+        inde = (inde + 1) % map->capacity;
     
                
     }

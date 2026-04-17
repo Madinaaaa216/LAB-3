@@ -231,3 +231,15 @@ hashmap.c:83:42: error: expected ‘;’ before ‘}’ token
    86 |     }
       |     ~                                     
 98f51ad
+Fri Apr 17 07:08:44 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:76:34: error: ‘indice’ undeclared (first use in this function); did you mean ‘inde’?
+   76 |         if(is_equal(map->buckets[indice]->key,key))
+      |                                  ^~~~~~
+      |                                  inde
+hashmap.c:76:34: note: each undeclared identifier is reported only once for each function it appears in
+eee0d7f
