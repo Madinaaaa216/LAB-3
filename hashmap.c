@@ -72,7 +72,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 Pair * searchMap(HashMap * map,  char * key) { 
     long index = hash(key, map->capacity);
     Pair * new = (Pair *)malloc(sizeof(Pair));
-    While(map->buckets[index] != NULL)
+    While(map->buckets[index] != NULL);
     {
         index++;
     }
