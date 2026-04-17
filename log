@@ -180,3 +180,31 @@ hashmap.c:85:5: error: expected expression before ‘}’ token
    85 |     }
       |     ^
 b889b1d
+Fri Apr 17 07:06:35 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:76:12: error: implicit declaration of function ‘isequal’; did you mean ‘is_equal’? [-Wimplicit-function-declaration]
+   76 |         if(isequal(buckets[indice]->key,key)
+      |            ^~~~~~~
+      |            is_equal
+hashmap.c:76:20: error: ‘buckets’ undeclared (first use in this function)
+   76 |         if(isequal(buckets[indice]->key,key)
+      |                    ^~~~~~~
+hashmap.c:76:20: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:76:28: error: ‘indice’ undeclared (first use in this function); did you mean ‘inde’?
+   76 |         if(isequal(buckets[indice]->key,key)
+      |                            ^~~~~~
+      |                            inde
+hashmap.c:76:45: error: expected ‘)’ before ‘{’ token
+   76 |         if(isequal(buckets[indice]->key,key)
+      |           ~                                 ^
+      |                                             )
+   77 |         {
+      |         ~                                    
+hashmap.c:85:5: error: expected expression before ‘}’ token
+   85 |     }
+      |     ^
+01bbee7

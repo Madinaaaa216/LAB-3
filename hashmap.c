@@ -73,13 +73,13 @@ Pair * searchMap(HashMap * map,  char * key) {
     long  inde = hash(key, map->capacity);
     while(map->buckets[inde] != NULL)
     {
-        if(map->buckets[inde]->key != NULL && isequal(buckets[indice]->key,key)
+        if(isequal(buckets[indice]->key,key)
         {
             map->current = inde;
             return map->bukets[inde];
             
         }
-        inde = (inde + 1) % map
+        inde = (inde + 1) % map->capacity
     
                
     }
