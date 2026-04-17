@@ -249,3 +249,25 @@ Fri Apr 17 07:09:01 PM UTC 2026:
  tests:  3|6
 total_score: 10/60
 d033c01
+Fri Apr 17 07:11:21 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:83:21: error: passing argument 1 of ‘hash’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |         inde = hash(inde, map->capacity)+1
+      |                     ^~~~
+      |                     |
+      |                     long int
+hashmap.c:28:19: note: expected ‘char *’ but argument is of type ‘long int’
+   28 | long hash( char * key, long capacity) {
+      |            ~~~~~~~^~~
+hashmap.c:83:43: error: expected ‘;’ before ‘}’ token
+   83 |         inde = hash(inde, map->capacity)+1
+      |                                           ^
+      |                                           ;
+......
+   86 |     }
+      |     ~                                      
+66079f2
