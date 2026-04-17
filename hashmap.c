@@ -70,14 +70,13 @@ void insertMap(HashMap * map, char * key, void * value) {
 // Recuerde actualizar el índice current a la posición encontrada. Recuerde que el arreglo es circular.
 
 Pair * searchMap(HashMap * map,  char * key) { 
-    long index = hash(key, map->capacity);
+    void * index = hash(key, map->capacity);
     Pair * new = (Pair *)malloc(sizeof(Pair));
     while(map->buckets[index] != NULL)
     {
         index++;
     }
     
-    new->key = index;
     new->value = index;
     return new;
 }

@@ -139,3 +139,16 @@ hashmap.c:81:16: error: assignment to ‘void *’ from ‘long int’ makes poi
    81 |     new->value = index;
       |                ^
 24be433
+Fri Apr 17 06:52:48 PM UTC 2026: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:73:20: error: initialization of ‘void *’ from ‘long int’ makes pointer from integer without a cast [-Wint-conversion]
+   73 |     void * index = hash(key, map->capacity);
+      |                    ^~~~
+hashmap.c:75:23: error: array subscript is not an integer
+   75 |     while(map->buckets[index] != NULL)
+      |                       ^
+48b0961
