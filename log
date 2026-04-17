@@ -208,3 +208,26 @@ hashmap.c:85:5: error: expected expression before ‘}’ token
    85 |     }
       |     ^
 01bbee7
+Fri Apr 17 07:08:15 PM UTC 2026: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:76:34: error: ‘indice’ undeclared (first use in this function); did you mean ‘inde’?
+   76 |         if(is_equal(map->buckets[indice]->key,key))
+      |                                  ^~~~~~
+      |                                  inde
+hashmap.c:76:34: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:80:25: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘bukets’; did you mean ‘buckets’?
+   80 |             return map->bukets[inde];
+      |                         ^~~~~~
+      |                         buckets
+hashmap.c:83:42: error: expected ‘;’ before ‘}’ token
+   83 |         inde = (inde + 1) % map->capacity
+      |                                          ^
+      |                                          ;
+......
+   86 |     }
+      |     ~                                     
+98f51ad

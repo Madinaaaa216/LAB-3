@@ -73,8 +73,9 @@ Pair * searchMap(HashMap * map,  char * key) {
     long  inde = hash(key, map->capacity);
     while(map->buckets[inde] != NULL)
     {
-        if(isequal(buckets[indice]->key,key)
+        if(is_equal(map->buckets[indice]->key,key))
         {
+            
             map->current = inde;
             return map->bukets[inde];
             
