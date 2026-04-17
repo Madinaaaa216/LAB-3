@@ -286,3 +286,13 @@ hashmap.c:28:19: note: expected ‘char *’ but argument is of type ‘long int
    28 | long hash( char * key, long capacity) {
       |            ~~~~~~~^~~
 e833728
+Fri Apr 17 07:14:42 PM UTC 2026: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:83:30: error: request for member ‘capacity’ in something not a structure or union
+   83 |         inde = (inde+1 % hash->capacity);
+      |                              ^~
+c57c885
