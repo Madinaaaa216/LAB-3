@@ -15,3 +15,17 @@ hashmap.c:78:1: error: control reaches end of non-void function [-Werror=return-
       | ^
 cc1: all warnings being treated as errors
 d1ff18b
+Fri Apr 17 06:43:51 PM UTC 2026: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:78:12: error: returning ‘long int’ from a function with return type ‘Pair *’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |     return index;
+      |            ^~~~~
+hashmap.c:74:11: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   74 |     Pair* nuevo = NULL;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+c0533b2
