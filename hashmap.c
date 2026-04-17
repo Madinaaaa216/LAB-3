@@ -78,7 +78,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
     
     new->key = index;
-    return Pair;
+    return new;
 }
 
 // 4. Implemente la función void eraseMap(HashMap * map, char * key). 
