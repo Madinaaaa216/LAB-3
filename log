@@ -296,3 +296,9 @@ hashmap.c:83:30: error: request for member ‘capacity’ in something not a str
    83 |         inde = (inde+1 % hash->capacity);
       |                              ^~
 c57c885
+Fri Apr 17 07:15:05 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|6
+total_score: 10/60
+aa728d3

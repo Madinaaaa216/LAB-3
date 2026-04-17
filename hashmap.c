@@ -80,7 +80,7 @@ Pair * searchMap(HashMap * map,  char * key) {
             return map->buckets[inde];
             
         }
-        inde = (inde+1 % hash->capacity); 
+        inde = (inde+1 % map->capacity); 
                
     }
     
