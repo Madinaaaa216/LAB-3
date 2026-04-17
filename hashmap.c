@@ -72,10 +72,11 @@ void insertMap(HashMap * map, char * key, void * value) {
 Pair * searchMap(HashMap * map,  char * key) { 
     long index = hash(key, map->capacity);
     Pair* nuevo = NULL;
+    Pair->key = index
     
 
 
-    return index;
+    return Pair;
 }
 
 // 4. Implemente la función void eraseMap(HashMap * map, char * key). 
