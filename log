@@ -91,3 +91,22 @@ hashmap.c:75:39: error: expected ‘;’ before ‘{’ token
    76 |     {
       |     ~                                  
 dbe70de
+Fri Apr 17 06:50:41 PM UTC 2026: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:75:5: error: implicit declaration of function ‘While’ [-Wimplicit-function-declaration]
+   75 |     While(map->buckets[index] != NULL)
+      |     ^~~~~
+hashmap.c:75:39: error: expected ‘;’ before ‘{’ token
+   75 |     While(map->buckets[index] != NULL)
+      |                                       ^
+      |                                       ;
+   76 |     {
+      |     ~                                  
+hashmap.c:81:16: error: assignment to ‘void *’ from ‘long int’ makes pointer from integer without a cast [-Wint-conversion]
+   81 |     new->value = index;
+      |                ^
+8e4a2c6

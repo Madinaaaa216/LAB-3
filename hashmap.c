@@ -78,6 +78,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
     
     new->key = index;
+    new->value = index;
     return new;
 }
 
