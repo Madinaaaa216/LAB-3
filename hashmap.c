@@ -130,7 +130,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 void eraseMap(HashMap * map, char * key) {
     if (map == NULL || map->size == 0) return;
     long index = hash(key, map->capacity);
-    long start = index;
+    long inicio = index;
     
     while (map->buckets[index] != NULL) {
         if (map->buckets[index]->key != NULL &&
@@ -141,7 +141,7 @@ void eraseMap(HashMap * map, char * key) {
             return;
         }
         index = (index + 1) % map->capacity;
-        if (index == start) return;
+        if (index == inicio) return;
     }
 }
 
