@@ -81,9 +81,8 @@ HashMap * createMap(long capacity) {
         map->buckets[index] = newPair;
         map->current = index;
         map->size++;
-    }
-
 }
+
 
 // 3. Implemente la función Pair * searchMap(HashMap * map, char * key), la cual retorna el Pair asociado a la clave ingresada. 
 // Recuerde que para buscar el par debe:
