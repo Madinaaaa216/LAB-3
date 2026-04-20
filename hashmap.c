@@ -69,7 +69,7 @@ HashMap * createMap(long capacity) {
     void insertMap(HashMap * map, char * key, void * value) {
         
         long index = hash(key, map->capacity);
-        long start = index;
+        long inicio = index;
         while (map->buckets[index] != NULL) {
             if (map->buckets[index]->key != NULL &&
                 strcmp(map->buckets[index]->key, key) == 0) {
@@ -79,7 +79,7 @@ HashMap * createMap(long capacity) {
                 break;
             }
             index = (index + 1) % map->capacity;
-            if (index == start) return;
+            if (index == inicio) return;
         }
 
         
